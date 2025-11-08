@@ -11,6 +11,10 @@ Detalhes</Text>
     title="Voltar para Home"
     onPress={() => navigation.goBack()}
  />
+    <Button title="Ir para Frases" onPress={() => navigation.navigate('Frases')} />
+    <Button title="Ir para Tarefas" onPress={() => navigation.navigate('Tarefas')} />
+    <Button title="Ir para Temperatura" onPress={() => navigation.navigate('Temperatura')} />
+
  </View>
  );
  }
