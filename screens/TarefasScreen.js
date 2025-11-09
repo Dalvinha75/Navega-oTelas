@@ -1,8 +1,15 @@
 import React from 'react';
 import { useState } from 'react';
- 
+import { criarTabela } from '../database/bancoDados'; 
 import { View, Text, TextInput, StyleSheet, Button, FlatList } from 'react-native';
- 
+
+import {
+  adicionarTarefa,
+  listarTarefas,
+  atualizarTarefa,
+  deletarTarefa
+} from '../database/bancoDados';
+
 export default function App() {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
